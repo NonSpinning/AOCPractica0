@@ -1,0 +1,16 @@
+package practica0.conversiones;
+import practica0.IConversion;
+
+/**[AOC 2020-2]Clase que transforma de base 10 a 16.
+ *@author Erika Yusset Madera Baldovinos
+ *@author Hugo Rafael Ibarra Alarcón
+ **/
+public class DiezADiesciseis implements IConversion{
+
+    @Override
+    public String convertir(String num){
+	//Checar que sea base 10
+	//Transformar a base 16
+	return null;
+    }
+}

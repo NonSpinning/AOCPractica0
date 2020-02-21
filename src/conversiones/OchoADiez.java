@@ -1,0 +1,16 @@
+package practica0.conversiones;
+import practica0.IConversion;
+
+/**[AOC 2020-2]Clase que transforma de base 8 a 10.
+ *@author Erika Yusset Madera Baldovinos
+ *@author Hugo Rafael Ibarra Alarcón
+ **/
+public class OchoADiez implements IConversion{
+
+    @Override
+    public String convertir(String num){
+	//Checar que sea base 8
+	//Transformar a base 10
+	return null;
+    }
+}
