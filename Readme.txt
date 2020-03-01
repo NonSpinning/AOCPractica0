@@ -19,7 +19,7 @@ III. ¿Cuál es el mínimo número de bits requerido para representar todos los 
 
 IV. En general, ¿Es posible hacer la conversion entre una base n y una base m? para cualquier n, m > 1 y n distinta de m.
    Sí, existen varios algoritmos para hacerlo:
- -Teniendo que n = akn^k + ak-1n^k-1 + … + an^0, convertimos el valor de n y todas las ai (0 ≤ i ≤ k) a su equivalente en bm y realizamos las operaciones de suma y multiplicación en esta base.
+ -Teniendo que n = akn^k + ak-1n^k-1 + … + an^0, convertimos el valor de n y todas las ai (0 ≤ i ≤ k) a su equivalente en m y realizamos las operaciones de suma y multiplicación en esta base.
 El inconveniente obvio que presenta este método es que necesitamos tener la conversión de todos los dígitos de la base n a la base m para poder convertir el número completo. Por esto, este método es útil principalmente cuando n < m.
 
  -Otra forma para convertir entre bases es ir dividir el número en base n entre m, tomar el cociente y repetir hasta que el cociente sea cero. Al final, el número en base m se conforma por los residuos, leyéndolos del último al primero. 
