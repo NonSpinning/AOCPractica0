@@ -9,6 +9,18 @@ public class DosADiez implements IConversion{
 
     @Override
     public String convertir(String num){
-	return null;
+    	//checar que es base 2
+	int n = Integer.parseInt(num); 
+        int dec= 0; 
+        int base = 1; 
+        int temp = n; 
+        while (temp > 0) { 
+            int ultimo = temp % 10; 
+            temp = temp / 10; 
+            dec += ultimo * base; 
+            base = base * 2; 
+        } 
+        String d = dec + "";
+        return d; 
     }
 }

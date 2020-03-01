@@ -9,6 +9,17 @@ public class DiezAOcho implements IConversion{
 
     @Override
     public String convertir(String num){
-	return null;
+    	//checar que es base 10
+	 int d = Integer.parseInt(num);
+    String digitos = "01234567";
+    if (d <= 0) return "0"; 
+    int base = 8;
+    String octa = "";
+    while (d > 0) {
+        int digit = d % base;              
+        octa = digitos.charAt(digit) + octa;   
+        d = d / base;
+    }
+    return octa;
     }
 }

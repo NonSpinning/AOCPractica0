@@ -9,6 +9,17 @@ public class DiesciseisADiez implements IConversion{
 
     @Override
     public String convertir(String num){
-	return null;
+	//checar que sea base 16
+    	String digits = "0123456789ABCDEF";
+             num = num.toUpperCase();
+             int val = 0;
+             for (int i = 0; i < num.length(); i++)
+             {
+                 char c = num.charAt(i);
+                 int d = digits.indexOf(c);
+                 val = 16*val + d;
+             }
+             String d = val + "";
+             return d;
     }
 }
