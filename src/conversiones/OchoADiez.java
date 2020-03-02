@@ -9,11 +9,11 @@ public class OchoADiez implements IConversion{
 
     @Override
     public String convertir(String num){
-	//Checar que sea base 8
+    	ChecaBase checabase = new ChecaBase();
+	if (!checabase.checarBase(num, "01234567")) throw new IllegalArgumentException("El número no está en la base apropidada");
 	int n = Integer.parseInt(num); 
         int dec= 0; 
         int base = 1; 
-  
         int temp = n; 
         while (temp > 0) { 
             int ultimo = temp % 10; 
@@ -22,7 +22,6 @@ public class OchoADiez implements IConversion{
             base = base * 8; 
         } 
         String d = dec + "";
-        return d; 
-	return null;
+        return d;
     }
 }

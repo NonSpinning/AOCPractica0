@@ -9,7 +9,8 @@ public class DosADiez implements IConversion{
 
     @Override
     public String convertir(String num){
-    	//checar que es base 2
+    	ChecaBase checabase = new ChecaBase();
+	if (!checabase.checarBase(num, "01")) throw new IllegalArgumentException("El número no está en la base apropidada");
 	int n = Integer.parseInt(num); 
         int dec= 0; 
         int base = 1; 

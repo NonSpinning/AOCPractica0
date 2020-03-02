@@ -9,6 +9,8 @@ public class DiesciseisAOcho implements IConversion{
 
     @Override
     public String convertir(String num){
-	return null;
+	DiesciseisADiez diesciseisadiez = new DiesciseisADiez();
+	DiezAOcho diezaocho = new DiezAOcho();
+	return diesciseisadiez.convertir(diezaocho.convertir(num));
     }
 }

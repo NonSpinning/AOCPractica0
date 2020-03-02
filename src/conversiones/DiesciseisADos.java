@@ -9,8 +9,8 @@ public class DiesciseisADos implements IConversion{
 
     @Override
     public String convertir(String num){
-	//Checar que sea base 16
-	//Transformar a base 2
-	return null;
+        DiesciseisADiez diesciseisadiez = new DiesciseisADiez();
+	DiezADos diezados = new DiezADos();
+	return diesciseisadiez.convertir(diezados.convertir(num));
     }
 }

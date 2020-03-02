@@ -9,9 +9,10 @@ public class DiesciseisADiez implements IConversion{
 
     @Override
     public String convertir(String num){
-	//checar que sea base 16
-    	String digits = "0123456789ABCDEF";
-             num = num.toUpperCase();
+	String digits = "0123456789ABCDEF";
+	 num = num.toUpperCase();
+	ChecaBase checabase = new ChecaBase();
+	if (!checabase.checarBase(num, digits)) throw new IllegalArgumentException("El número no está en la base apropidada");            
              int val = 0;
              for (int i = 0; i < num.length(); i++)
              {

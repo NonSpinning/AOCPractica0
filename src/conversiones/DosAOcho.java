@@ -9,8 +9,8 @@ public class DosAOcho implements IConversion{
 
     @Override
     public String convertir(String num){
-	//Checar que sea base 2
-	//Transformar a base 8
-	return null;
+	DosADiez dosadiez = new DosADiez();
+	DiezAOcho diezaocho = new DiezAOcho();	
+	return diezaocho.convertir(dosadiez.convertir(num));
     }
 }
