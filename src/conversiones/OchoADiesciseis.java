@@ -11,6 +11,6 @@ public class OchoADiesciseis implements IConversion{
     public String convertir(String num){
 	OchoADiez ochoadiez = new OchoADiez();
 	DiezADiesciseis diezadiesciseis = new DiezADiesciseis();
-	return ochoadiez.convertir(diezadiesciseis.convertir(num));
+	return diezadiesciseis.convertir(ochoadiez.convertir(num));
     }
 }
