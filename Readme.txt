@@ -5,6 +5,7 @@ Madera Baldovinos Erika Yusset  316125985
 
 Manera de correr el programa:
 Utilizamos ant, entonces sólo es necesario poner "ant run" en la terminal a la altura del build para correrlo. Se escoge en qué base se desea convertir, luego se escribe el número en esa base y finalmente se dará la respuesta en la base pedida. Si se pone una base diferente a la que pediste el programa lanzara un error y terminará.
+Adicionalmente, si corres "ant docs" se generará una carpeta con la documentación de las clases.
 
 Preguntas: 
 I. Escribe la representacion en binario del número decimal 172.
